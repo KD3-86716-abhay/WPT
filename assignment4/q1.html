@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Calculator</h1>
+
+
+
+<table>
+<tr style="margin: 20px;">
+    <td>
+        Enter Number 1:
+    </td>
+    <td>
+        <input type="text" name="" id="no1"style="margin: 20px;">
+    </td>
+</tr>
+    <tr style="margin: 20px;">
+    <td>Enter Number 2:</td>
+    <td>
+        <input type="text" id="no2"style="margin: 20px;">
+
+    </td>
+</tr>
+<tr>
+    <td>Result:</td>
+    <td><input type="text" id="result"></td>
+</tr>
+<br/>
+<br/>
+
+<tr>
+    <td>
+        <input type="button" id="Additionbtn" value="Addition" name="Addition" onclick="Addition()">
+        <input type="button" id="substractionbtn" value="Substraction" name="Substraction" onclick="Substraction()">
+    </td>
+    <td>
+        <input type="button" id="Multiplicationbtn" value="Multiplication" id="Multiplication" onclick="Multiplication()">
+        <input type="button" value="Divison" id="Divison" onclick="Divison()">
+    </td>
+</tr>
+
+</center>
+
+
+
+</table>
+
+
+<script>
+
+    var num1=document.getElementById("no1");
+    var num2=document.getElementById("no2");
+    var result=document.getElementById("result")
+
+
+    function Addition()
+    {
+        //debugger;
+        result.value=parseInt(num1.value)+parseInt(num2.value);
+        
+
+    }
+    function Substraction()
+    {
+        result.value=num1.value-num2.value;
+    }
+    function Multiplication()
+    {
+        result.value=num1.value*num2.value;
+    }
+
+    function Divison()
+    {
+        result.value=num1.value/num2.value;
+    }
+
+</script>
+</body>
+</html>
